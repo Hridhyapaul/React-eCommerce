@@ -1,8 +1,7 @@
 import React from "react";
 
 const SingleProducts = ({ product, handleAddToCart }) => {
-  console.log(handleAddToCart)
-  const { id, title, price, description, category, image } = product;
+  const {title, price, description, image } = product;
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg p-6 flex flex-col">
       <img className="w-50 h-50 object-contain mx-auto" src={image} alt="" />
